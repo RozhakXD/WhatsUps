@@ -1,8 +1,8 @@
 # WHATSAPP GROUP SEARCHER
 
-![WhatsUp](https://github.com/user-attachments/assets/12c9ffd4-443a-45f7-8e4b-985aea0d5e58)
+![WhatsUps](https://github.com/user-attachments/assets/8a6c8515-364e-4b92-98ad-fc763fe8c6d0)
 
-WhatsUp is a Python-based application that allows you to search for WhatsApp groups by name. It provides an easy-to-use interface to find and join WhatsApp groups based on your interests.
+WhatsUps is a Python-based application that allows you to search for WhatsApp groups by name. It provides an easy-to-use interface to find and join WhatsApp groups based on your interests.
 
 ## Features
 - **Multiple Group Search**: Search for multiple WhatsApp groups at once by separating group names with commas.
@@ -47,7 +47,7 @@ WhatsUp is a Python-based application that allows you to search for WhatsApp gro
    ```
 
 ## Contributing
-We welcome contributions to improve WhatsUp! Feel free to open issues or submit pull requests.
+We welcome contributions to improve WhatsUps! Feel free to open issues or submit pull requests.
 
 ## Support
 If you find this project useful, consider supporting me through the following platforms:
@@ -64,7 +64,7 @@ If you find this project useful, consider supporting me through the following pl
     - **Solution**: Ensure your internet connection is stable. If the problem persists, try again later.
 
 ## Screenshot
-![FunPic_20240803_183247761](https://github.com/user-attachments/assets/5a170df2-02a6-40fb-8775-91dbad5823f6)
+![FunPic_20240803_183247761](https://github.com/user-attachments/assets/555489c3-b4c5-4efd-beed-5b5cda98fbf0)
 
 ## License
 This project is licensed under the [GPL-3.0](https://github.com/RozhakXD/WhatsUp?tab=GPL-3.0-1-ov-file#) license.
