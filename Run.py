@@ -6,7 +6,7 @@ try:
     from rich import print as printf
     from requests.exceptions import RequestException
 except (ModuleNotFoundError) as e:
-    sys.exit(f"Error: {str(e).capitalize()}!")
+    __import__('sys').exit(f"Error: {str(e).capitalize()}!")
 
 LOOPING, STOP, GROUPS = 0, False, []
 
