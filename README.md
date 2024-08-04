@@ -14,7 +14,7 @@ WhatsUps is a Python-based application that allows you to search for WhatsApp gr
 **On General Operating Systems**
 1. Clone the repository:
     ```
-    $ git clone https://github.com/RozhakXD/WhatsUp.git
+    $ git clone https://github.com/RozhakXD/WhatsUps.git
     $ cd WhatsUp
     ```
 2. Install the required dependencies:
@@ -34,7 +34,7 @@ WhatsUps is a Python-based application that allows you to search for WhatsApp gr
     ```
 2. Clone the repository:
     ```
-    $ git clone https://github.com/RozhakXD/WhatsUp.git
+    $ git clone https://github.com/RozhakXD/WhatsUps.git
     $ cd WhatsUp
     ```
 3. Install the required dependencies:
