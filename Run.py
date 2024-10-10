@@ -16,10 +16,10 @@ class MAIN:
         global STOP, LOOPING
         try:
             self.BANNER()
-            printf(Panel(f"[italic white]Please fill in the name of the group you want to search for, you can use[italic red] commas[italic white] to search for\nmultiple groups, for example:[italic green] Termux, Kali Linux", width=59, style="bold orange4", title="[ Pertanyaan ]", subtitle="╭───────", subtitle_align="left"))
+            printf(Panel(f"[bold white]Please fill in the name of the group you want to search for, you can use[bold red] commas[bold white] to search for\nmultiple groups, for example:[bold green] Termux, Kali Linux", width=59, style="bold orange4", title="[bold orange4][ Pertanyaan ]", subtitle="[bold orange4]╭───────", subtitle_align="left"))
             self.QUERY = Console().input("[bold orange4]   ╰─> ")
             if len(self.QUERY) != 0:
-                printf(Panel(f"[italic white]Searching for WhatsApp groups, you can use[italic green] CTRL + C[italic white] if you want to stop searching,\nand don't use[italic red] CTRL + Z[italic white] to save the group!", width=59, style="bold orange4", title="[ Catatan ]"))
+                printf(Panel(f"[bold white]Searching for WhatsApp groups, you can use[bold green] CTRL + C[bold white] if you want to stop searching,\nand don't use[bold red] CTRL + Z[bold white] to save the group!", width=59, style="bold orange4", title="[bold orange4][ Catatan ]"))
                 for NAME in self.QUERY.split(','):
                     try:
                         printf(f"[bold orange4]   ──>[bold white] MENCARI[bold green] {str(NAME)[:30].upper()}[bold white] GROUP!   ", end='\r')
@@ -47,16 +47,16 @@ class MAIN:
                     with open(self.FILE_NAME, 'w', encoding='utf-8') as W:
                         json.dump(GROUPS, W, ensure_ascii=False, indent=4)
                     W.close()
-                    printf(Panel(f"[italic white]Congratulations, you have successfully searched for[italic red] {len(GROUPS)}[italic white] groups, and all the results have been\nsaved in[italic green] {self.FILE_NAME}[italic white]!", width=59, style="bold orange4", title="[ Selesai ]"))
+                    printf(Panel(f"[bold white]Congratulations, you have successfully searched for[bold red] {len(GROUPS)}[bold white] groups, and all the results have been\nsaved in[bold green] {self.FILE_NAME}[bold white]!", width=59, style="bold orange4", title="[bold orange4][ Selesai ]"))
                     sys.exit()
                 else:
-                    printf(Panel(f"[italic red]We didn't find any groups with the name you are looking for, please try a different question!", width=59, style="bold orange4", title="[ Tidak Ditemukan ]"))
+                    printf(Panel(f"[bold red]We didn't find any groups with the name you are looking for, please try a different question!", width=59, style="bold orange4", title="[bold orange4][ Tidak Ditemukan ]"))
                     sys.exit()
             else:
-                printf(Panel(f"[italic red]You must fill in the group name correctly, it cannot be empty!", width=59, style="bold orange4", title="[ Tidak Boleh Kosong ]"))
+                printf(Panel(f"[bold red]You must fill in the group name correctly, it cannot be empty!", width=59, style="bold orange4", title="[bold orange4][ Tidak Boleh Kosong ]"))
                 sys.exit()
         except (Exception) as e:
-            printf(Panel(f"[italic red]{str(e).capitalize()}!", width=59, style="bold orange4", title="[ Error ]"))
+            printf(Panel(f"[bold red]{str(e).capitalize()}!", width=59, style="bold orange4", title="[bold orange4][ Error ]"))
             sys.exit()
 
     def SEARCH_GROUPS(self, query):
@@ -104,7 +104,7 @@ class MAIN:
                         printf(Panel(f"""[bold white]Group Name :[bold green] {self.GROUP_NAME}
 [bold white]ID :[bold red] {self.GROUP_ID}
 [bold white]Link :[bold red] {self.GROUP_LINK}
-[bold white]Deskripsi :[bold green] {self.DESCRIPTION}""", width=59, style="bold orange4", title="[ Sukses ]"))
+[bold white]Deskripsi :[bold green] {self.DESCRIPTION}""", width=59, style="bold orange4", title="[bold orange4][ Sukses ]"))
 
                         GROUPS.append({
                             'Link': f'{self.GROUP_LINK}',
@@ -122,10 +122,10 @@ class MAIN:
 
     def BANNER(self):
         os.system('cls' if os.name == 'nt' else 'clear')
-        printf(Panel("""[bold red]● [bold yellow]● [bold green]●[/]
+        printf(Panel(r"""[bold red]● [bold yellow]● [bold green]●[/]
 [bold red] __      __.__            __          ____ ___         
 /  \    /  \  |__ _____ _/  |_  _____|    |   \______  
-\   \/\/   /  |  \\\__  \\\   __\/  ___/    |   /\____ \ 
+\   \/\/   /  |  \\__  \\   __\/  ___/    |   /\____ \ 
  \        /|   Y  \/ __ \|  |  \___ \|    |  / |  |_> >
 [bold white]  \__/\  / |___|  (____  /__| /____  >______/  |   __/ 
        \/       \/     \/          \/          |__|    
@@ -137,7 +137,7 @@ if __name__=='__main__':
         os.system('git pull')
         MAIN()
     except (Exception) as e:
-        printf(Panel(f"[italic red]{str(e).capitalize()}!", width=59, style="bold orange4", title="[ Error ]"))
+        printf(Panel(f"[bold red]{str(e).capitalize()}!", width=59, style="bold orange4", title="[bold orange4][ Error ]"))
         sys.exit()
     except (KeyboardInterrupt):
         sys.exit()
